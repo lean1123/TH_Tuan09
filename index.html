@@ -10,8 +10,54 @@
 </head>
 
 <body>
+    <div id="wrapper">
+        <img src="./images/R.jfif" alt="">
+        <div class="nav-page">
+            <a href="">Trang chu</a>
+            <a id="onForm">Dat lich</a>
+        </div>
+        <div class="form-dating">
+            <table id="nember-list">
+                <tr>
+                    <th>STT</th>
+                    <th>Ma benh nhan</th>
+                    <th>Mat khau</th>
+                    <th>Ngay kham</th>
+                    <th>Phu thu dich vu</th>
+                    <th>Chuyen khoa</th>
+                </tr>
+            </table>
+        </div>
 
+        <div id="formSend" class="form-register">
+            <label for="">Ma benh nhan</label>
+            <input type="text" name="maBenhNhan">
+            <label for="matKhau">Mat khau</label>
+            <input type="password" name="matKhau" id="">
+            <label for="lichKham">Ngay kham</label>
+            <input type="date" name="lichKham">
+            <div class="service">
+                <p>Loai dich vu</p>
+                <input type="checkbox" name="type1" id="" value="Kham benh theo yeu cau">
+                <label for="type1">Kham benh theo yeu cau</label>
+                <input type="checkbox" name="type2" id="" value="Dieu tri ngoai tru">
+                <label for="type2">Dieu tri ngoai tru</label>
+                <input type="checkbox" name="type3" id="" value="Bac si theo yeu cau">
+                <label for="type3">Bac si theo yeu cau</label>
+            </div>
+            <div class="listProfessional">
+                <p>Chuyen khoa</p>
+                <select name="" id="select-professional">
+                    <option value="Ngoai tong quat">Ngoai tong quat</option>
+                    <option value="Noi chuyen sau">Noi chuyen sau</option>
+                    <option value="Dieu tri co truyen">Dieu tri co truyen</option>
+                </select>
+            </div>
+            <button id="sendForm">Dat lich</button>
+            <button id="closeForm">Close</button>
+        </div>
+    </div>
 </body>
-<script src="./control.js"></script>
+<script src="./js/control.js"></script>
 
 </html>
